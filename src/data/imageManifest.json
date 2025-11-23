@@ -5,13 +5,129 @@
     "landscape": "/ELMO.H-Photopraphy/images/covers/landscape.jpg",
     "lifestyle": "",
     "motion": "",
-    "personal": "",
+    "personal": "/ELMO.H-Photopraphy/images/personal/Cara/photo-1.jpg",
     "street": "",
-    "wedding": ""
+    "wedding": "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-1.jpg"
   },
-  "personal": [],
+  "personal": [
+    {
+      "id": "Cara",
+      "name": "Cara",
+      "cover": "/ELMO.H-Photopraphy/images/personal/Cara/photo-1.jpg",
+      "photos": [
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-1.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-2.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-3.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-4.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-5.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-6.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-7.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-8.jpg",
+        "/ELMO.H-Photopraphy/images/personal/Cara/photo-9.jpg"
+      ],
+      "tags": []
+    },
+    {
+      "id": "小娜 水族館",
+      "name": "小娜 水族館",
+      "cover": "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-1.jpg",
+      "photos": [
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-1.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-10.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-11.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-2.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-3.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-4.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-5.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-6.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-7.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-8.jpg",
+        "/ELMO.H-Photopraphy/images/personal/小娜 水族館/photo-9.jpg"
+      ],
+      "tags": []
+    },
+    {
+      "id": "溫如",
+      "name": "溫如",
+      "cover": "/ELMO.H-Photopraphy/images/personal/溫如/photo-1.jpg",
+      "photos": [
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-1.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-2.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-3.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-4.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-5.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-6.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-7.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-8.jpg",
+        "/ELMO.H-Photopraphy/images/personal/溫如/photo-9.jpg"
+      ],
+      "tags": []
+    },
+    {
+      "id": "麥香魚",
+      "name": "麥香魚",
+      "cover": "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-1.jpg",
+      "photos": [
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-1.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-10.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-11.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-12.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-2.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-3.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-4.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-5.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-6.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-7.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-8.jpg",
+        "/ELMO.H-Photopraphy/images/personal/麥香魚/photo-9.jpg"
+      ],
+      "tags": []
+    }
+  ],
   "couple": [],
-  "wedding": [],
+  "wedding": [
+    {
+      "id": "[婚紗] Hui & Rainie | 2019",
+      "name": "[婚紗] Hui & Rainie | 2019",
+      "cover": "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-1.jpg",
+      "photos": [
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-1.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-10.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-11.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-12.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-13.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-14.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-15.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-16.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-17.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-18.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-19.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-2.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-20.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-21.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-22.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-23.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-24.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-25.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-26.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-27.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-28.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-29.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-3.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-30.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-31.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-4.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-5.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-6.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-7.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-8.jpg",
+        "/ELMO.H-Photopraphy/images/wedding/[婚紗] Hui & Rainie | 2019/photo-9.jpg"
+      ],
+      "tags": [
+        "婚紗"
+      ]
+    }
+  ],
   "event": [],
   "lifestyle": [],
   "street": [],

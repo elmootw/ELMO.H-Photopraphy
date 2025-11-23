@@ -1,47 +1,56 @@
-import { useState, useMemo } from 'react'
+import { useState } from 'react'
 import PhotoModal from './PhotoModal'
 
 export default function PhotoGallery({ photos }) {
   const [selectedPhoto, setSelectedPhoto] = useState(null)
-  const [imageErrors, setImageErrors] = useState(new Set())
-
-  const handleImageError = (photo) => {
-    console.warn('Failed to load image:', photo)
-    setImageErrors(prev => new Set([...prev, photo]))
-  }
-
-  const validPhotos = useMemo(() => {
-    return photos.filter(photo => !imageErrors.has(photo))
-  }, [photos, imageErrors])
 
   return (
-    <>
-      {validPhotos.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {validPhotos.map((photo, idx) => (
-            <div
-              key={photo}
-              className="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group"
-              onClick={() => setSelectedPhoto(photo)}
-            >
-              <img
-                src={photo}
-                alt={`photo ${idx}`}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                loading="lazy"
-                onContextMenu={(e) => e.preventDefault()}
-                onError={() => handleImageError(photo)}
-              />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p className="text-center text-gray-500 py-8">暫無可顯示的照片</p>
-      )}
+    <div>
+      {/* 照片網格 */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {photos.map((photo, idx) => (
+          <div
+            key={idx}
+            onClick={() => setSelectedPhoto(photo)}
+            className="cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group aspect-square"
+          >
+            <img
+              src={photo}
+              alt={`Photo ${idx + 1}`}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              loading="lazy"
+              onContextMenu={(e) => e.preventDefault()}
+            />
+          </div>
+        ))}
+      </div>
 
+      {/* Modal - 修正為支持任意比例 */}
       {selectedPhoto && (
-        <PhotoModal photo={selectedPhoto} onClose={() => setSelectedPhoto(null)} />
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedPhoto(null)}
+          onContextMenu={(e) => e.preventDefault()}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] flex items-center justify-center">
+            <img
+              src={selectedPhoto}
+              alt="Enlarged"
+              className="max-w-full max-h-[90vh] object-contain"
+              onContextMenu={(e) => e.preventDefault()}
+            />
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                setSelectedPhoto(null)
+              }}
+              className="absolute top-4 right-4 text-white text-3xl hover:text-rose-gold transition"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
       )}
-    </>
+    </div>
   )
 }
