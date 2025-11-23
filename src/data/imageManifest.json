@@ -1,0 +1,26 @@
+{
+  "categories": {
+    "couple": "",
+    "event": "",
+    "landscape": "/ELMO.H-Photopraphy/images/covers/landscape.jpg",
+    "lifestyle": "",
+    "motion": "",
+    "personal": "",
+    "street": "",
+    "wedding": ""
+  },
+  "personal": [],
+  "couple": [],
+  "wedding": [],
+  "event": [],
+  "lifestyle": [],
+  "street": [],
+  "landscape": [
+    "/ELMO.H-Photopraphy/images/landscape/photo-1.jpg",
+    "/ELMO.H-Photopraphy/images/landscape/photo-2.jpg",
+    "/ELMO.H-Photopraphy/images/landscape/photo-3.jpg",
+    "/ELMO.H-Photopraphy/images/landscape/photo-4.jpg",
+    "/ELMO.H-Photopraphy/images/landscape/photo-5.jpg"
+  ],
+  "motion": []
+}
