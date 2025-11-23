@@ -12,6 +12,12 @@ const BASE_PATH = '/ELMO.H-Photopraphy'
 // 預定義的 8 個分類
 const CATEGORIES = ['personal', 'couple', 'wedding', 'event', 'lifestyle', 'street', 'landscape', 'motion']
 
+function extractTags(albumName) {
+  const tagMatches = albumName.match(/\[([^\]]+)\]/g)
+  if (!tagMatches) return []
+  return tagMatches.map(tag => tag.slice(1, -1)) // 移除 [ ]
+}
+
 // 初始化
 const manifest = {
   categories: {},
@@ -82,7 +88,10 @@ items.forEach(category => {
       
       if (!albumStat.isDirectory()) return
 
-      const photos = fs.readdirSync(albumPath)
+      const allFiles = fs.readdirSync(albumPath)
+      console.log(`  [DEBUG] ${albumName} 內的檔案:`, allFiles)
+
+      const photos = allFiles
         .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f))
         .sort((a, b) => {
           if (a === 'cover.jpg') return -1
@@ -91,17 +100,21 @@ items.forEach(category => {
         })
         .map(f => `${BASE_PATH}/images/${category}/${albumName}/${f}`)
 
+      console.log(`  [DEBUG] ${albumName} 找到的照片:`, photos.length)
+
       if (photos.length > 0) {
+        const tags = extractTags(albumName)
         manifest[category].push({
           id: albumName,
           name: albumName,
           cover: photos[0],
-          photos: photos
+          photos: photos,
+          tags: tags
         })
         if (!firstItemCover) {
           firstItemCover = photos[0]
         }
-        console.log(`  ✓ 相簿: ${albumName} (${photos.length} 張)`)
+        console.log(`  ✓ 相簿: ${albumName} (${photos.length} 張)${tags.length > 0 ? ` [${tags.join(', ')}]` : ''}`)
       }
     })
   }
