@@ -1,23 +1,22 @@
 import { useState } from 'react'
-import PhotoModal from './PhotoModal'
 
 export default function PhotoGallery({ photos }) {
   const [selectedPhoto, setSelectedPhoto] = useState(null)
 
   return (
     <div>
-      {/* 照片網格 */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {/* 照片網格 - Masonry 瀑布流布局 */}
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
         {photos.map((photo, idx) => (
           <div
             key={idx}
             onClick={() => setSelectedPhoto(photo)}
-            className="cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group aspect-square"
+            className="cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300 group break-inside-avoid"
           >
             <img
               src={photo}
               alt={`Photo ${idx + 1}`}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-300"
               loading="lazy"
               onContextMenu={(e) => e.preventDefault()}
             />
@@ -25,7 +24,7 @@ export default function PhotoGallery({ photos }) {
         ))}
       </div>
 
-      {/* Modal - 修正為支持任意比例 */}
+      {/* Modal - 支持任意比例 */}
       {selectedPhoto && (
         <div
           className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
