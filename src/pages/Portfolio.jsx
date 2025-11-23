@@ -18,9 +18,6 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-cream py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <h1 className="text-4xl font-serif text-wine-red font-bold mb-12 text-center">
-          作品集
-        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat) => (
             <Link

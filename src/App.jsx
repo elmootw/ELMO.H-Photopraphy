@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import About from './pages/About'
 import Portfolio from './pages/Portfolio'
+import About from './pages/About'
 import Personal from './pages/portfolio/Personal'
 import Couple from './pages/portfolio/Couple'
 import Wedding from './pages/portfolio/Wedding'
@@ -23,7 +22,7 @@ function App() {
     >
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/personal" element={<Personal />} />

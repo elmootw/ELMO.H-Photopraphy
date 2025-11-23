@@ -36,17 +36,15 @@ ELMO.H-Photopraphy/
 │   │   └── PhotoModal.jsx         # 照片放大 Modal
 │   │
 │   ├── pages/
-│   │   ├── Home.jsx               # 首頁
-│   │   ├── About.jsx              # 關於我頁面
-│   │   ├── Portfolio.jsx          # 作品集分類首頁
+│   │   ├── About.jsx              # 關於我頁面（含攝影師照片）
+│   │   ├── Portfolio.jsx          # 作品集分類首頁（取代 Home）
 │   │   │
 │   │   └── portfolio/
-│   │       ├── CategoryPage.jsx   # 通用類別頁面元件
 │   │       ├── Personal.jsx       # 個人作品頁面
 │   │       ├── Couple.jsx         # 情侶作品頁面
-│   │       ├── Wedding.jsx        # 婚禮作品頁面
+│   │       ├── Wedding.jsx        # 婚禮作品頁面（含 Hashtag 篩選）
 │   │       ├── Event.jsx          # 活動作品頁面
-│   │       ├── Lifestyle.jsx      # 生活作品頁面
+│   │       ├── Lifestyle.jsx      # 生活作品頁面（含 Hashtag 篩選）
 │   │       ├── Street.jsx         # 街拍作品頁面
 │   │       ├── Landscape.jsx      # 風景作品頁面
 │   │       ├── Motion.jsx         # 動態作品頁面（YouTube）
