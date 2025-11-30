@@ -43,7 +43,7 @@ ELMO.H-Photopraphy/
 │   │       ├── Personal.jsx       # 個人作品頁面
 │   │       ├── Couple.jsx         # 情侶作品頁面
 │   │       ├── Wedding.jsx        # 婚禮作品頁面（含 Hashtag 篩選）
-│   │       ├── Event.jsx          # 活動作品頁面
+│   │       ├── Event.jsx          # 活動作品頁面（含 Hashtag 篩選）
 │   │       ├── Lifestyle.jsx      # 生活作品頁面（含 Hashtag 篩選）
 │   │       ├── Street.jsx         # 街拍作品頁面
 │   │       ├── Landscape.jsx      # 風景作品頁面
@@ -289,8 +289,11 @@ npm run preview         # 預覽生產構建
 - [x] 右鍵禁用保護
 - [x] 8 個作品集分類
 - [x] 相簿與直接照片混合支持
-- [x] Hashtag 篩選（Lifestyle）
+- [x] Hashtag 篩選（Lifestyle、Wedding、Event）
 - [x] YouTube 影片嵌入
 - [x] 自動部署 CI/CD
 - [x] 特殊字符路徑支持
 - [x] 統一類別封面管理
+- [x] 攝影師自介頁面（含照片）
+- [x] 首頁直接顯示作品分類
+- [x] Masonry 瀑布流照片布局
