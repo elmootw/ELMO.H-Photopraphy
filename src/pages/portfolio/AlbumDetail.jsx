@@ -16,12 +16,13 @@ export default function AlbumDetail({ category }) {
       const found = albums.find(a => a.id === decodedId)
       
       if (found) {
-        // 按照片編號排序
+        // 按照片編號排序（數值排序）
         const sortedAlbum = {
           ...found,
           photos: found.photos.sort((a, b) => {
-            const numA = parseInt(a.id?.match(/\d+$/)?.[0] || 0)
-            const numB = parseInt(b.id?.match(/\d+$/)?.[0] || 0)
+            // 從路徑提取 photo-N 中的數字
+            const numA = parseInt(a.match(/photo-(\d+)\.jpg/)?.[1] || 0)
+            const numB = parseInt(b.match(/photo-(\d+)\.jpg/)?.[1] || 0)
             return numA - numB
           })
         }
