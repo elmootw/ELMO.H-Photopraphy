@@ -11,7 +11,7 @@
 ELMO.H-Photopraphy/
 ├── public/
 │   └── images/
-│       ├── personal/              # 個人作品相簿（相簿結構）
+│       ├── portrait/              # 人像作品相簿（相簿結構）
 │       ├── couple/                # 情侶作品相簿（相簿結構）
 │       ├── wedding/               # 婚禮作品相簿（相簿結構）
 │       ├── event/                 # 活動作品相簿（相簿結構）
@@ -19,7 +19,7 @@ ELMO.H-Photopraphy/
 │       ├── street/                # 街拍照片（直接放置，無相簿）
 │       ├── landscape/             # 風景照片（直接放置，無相簿）
 │       └── covers/                # 類別封面圖片
-│           ├── personal.jpg
+│           ├── portrait.jpg
 │           ├── couple.jpg
 │           ├── wedding.jpg
 │           ├── event.jpg
@@ -40,7 +40,7 @@ ELMO.H-Photopraphy/
 │   │   ├── Portfolio.jsx          # 作品集分類首頁（取代 Home）
 │   │   │
 │   │   └── portfolio/
-│   │       ├── Personal.jsx       # 個人作品頁面
+│   │       ├── Portrait.jsx       # 人像作品頁面
 │   │       ├── Couple.jsx         # 情侶作品頁面
 │   │       ├── Wedding.jsx        # 婚禮作品頁面（含 Hashtag 篩選）
 │   │       ├── Event.jsx          # 活動作品頁面（含 Hashtag 篩選）
@@ -272,6 +272,7 @@ npm run preview         # 預覽生產構建
 | `/portfolio` | Portfolio | 分類首頁 |
 | `/portfolio/personal` | Personal | 個人相簿 |
 | `/portfolio/couple` | Couple | 情侶相簿 |
+| `/portfolio/portrait` | Portrait | 人像相簿 |
 | `/portfolio/wedding` | Wedding | 婚禮相簿 |
 | `/portfolio/event` | Event | 活動相簿 |
 | `/portfolio/lifestyle` | Lifestyle | 生活相簿 |

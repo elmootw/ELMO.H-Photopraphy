@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Portfolio from './pages/Portfolio'
 import About from './pages/About'
-import Personal from './pages/portfolio/Personal'
 import Couple from './pages/portfolio/Couple'
 import Wedding from './pages/portfolio/Wedding'
 import Event from './pages/portfolio/Event'
@@ -11,6 +10,7 @@ import Street from './pages/portfolio/Street'
 import Landscape from './pages/portfolio/Landscape'
 import Motion from './pages/portfolio/Motion'
 import AlbumDetail from './pages/portfolio/AlbumDetail'
+import Portrait from './pages/portfolio/Portrait'
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
         <Route path="/" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/personal" element={<Personal />} />
-        <Route path="/portfolio/personal/:albumId" element={<AlbumDetail category="personal" />} />
+        <Route path="/portfolio/portrait" element={<Portrait />} />
+        <Route path="/portfolio/portrait/:albumId" element={<AlbumDetail category="portrait" />} />
         <Route path="/portfolio/couple" element={<Couple />} />
         <Route path="/portfolio/couple/:albumId" element={<AlbumDetail category="couple" />} />
         <Route path="/portfolio/wedding" element={<Wedding />} />

@@ -5,7 +5,7 @@ export default function Portfolio() {
   const categoriesData = imageManifest.categories || {}
 
   const categories = [
-    { name: '個人', path: '/portfolio/personal', key: 'personal' },
+    { name: '人像', path: '/portfolio/portrait', key: 'portrait' },
     { name: '情侶', path: '/portfolio/couple', key: 'couple' },
     { name: '登記/婚宴', path: '/portfolio/wedding', key: 'wedding' },
     { name: '活動', path: '/portfolio/event', key: 'event' },

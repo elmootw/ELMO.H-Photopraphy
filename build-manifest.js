@@ -10,7 +10,7 @@ const outputFile = path.join(__dirname, 'src/data/imageManifest.json')
 const BASE_PATH = '/ELMO.H-Photopraphy'
 
 // 預定義的 8 個分類
-const CATEGORIES = ['personal', 'couple', 'wedding', 'event', 'lifestyle', 'street', 'landscape', 'motion']
+const CATEGORIES = ['portrait', 'couple', 'wedding', 'event', 'lifestyle', 'street', 'landscape', 'motion']
 
 function extractTags(albumName) {
   const tagMatches = albumName.match(/\[([^\]]+)\]/g)
@@ -21,7 +21,7 @@ function extractTags(albumName) {
 // 初始化
 const manifest = {
   categories: {},
-  personal: [],
+  portrait: [],
   couple: [],
   wedding: [],
   event: [],
