@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+  <script>
+    // 將不存在的路由重定向到根目錄，讓 React Router 處理
+    const path = window.location.pathname.replace(/\/$/, '') || '/';
+    sessionStorage.redirect = path;
+    window.location.href = '/ELMO.H-Photopraphy/';
+  </script>
+</head>
+<body>
+  <p>重定向中...</p>
+</body>
+</html>
