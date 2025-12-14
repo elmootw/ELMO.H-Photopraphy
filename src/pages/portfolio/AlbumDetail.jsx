@@ -16,7 +16,16 @@ export default function AlbumDetail({ category }) {
       const found = albums.find(a => a.id === decodedId)
       
       if (found) {
-        setAlbum(found)
+        // 按照片編號排序
+        const sortedAlbum = {
+          ...found,
+          photos: found.photos.sort((a, b) => {
+            const numA = parseInt(a.id?.match(/\d+$/)?.[0] || 0)
+            const numB = parseInt(b.id?.match(/\d+$/)?.[0] || 0)
+            return numA - numB
+          })
+        }
+        setAlbum(sortedAlbum)
       } else {
         navigate(`/portfolio/${category}`)
       }
